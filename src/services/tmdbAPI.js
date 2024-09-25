@@ -12,7 +12,7 @@ export const getPopularMovies = async (page = 1, genreId = null) => {
   const params = {
     include_adult: "false",
     include_video: "false",
-    language: "en-US",
+    language: "fr-FR",
     page,
     sort_by: "popularity.desc",
   };
@@ -31,7 +31,7 @@ export const getPopularMovies = async (page = 1, genreId = null) => {
 // Fonction pour récupérer la liste des genres de films
 export const getMovieGenres = async () => {
   const response = await axios.get(`${baseUrl}/genre/movie/list`, {
-    params: { language: "en-US" },
+    params: { language: "fr-FR" },
     headers: headers,
   });
   return response.data.genres;
@@ -40,7 +40,7 @@ export const getMovieGenres = async () => {
 // Fonction pour récupérer les détails d'un film
 export const getMovieDetails = async (movieId) => {
   const response = await axios.get(`${baseUrl}/movie/${movieId}`, {
-    params: { language: "en-US" },
+    params: { language: "fr-FR" },
     headers: headers,
   });
   return response.data;
@@ -63,7 +63,7 @@ export const searchMovies = async (query) => {
     params: {
       query: query,
       include_adult: "false",
-      language: "en-US",
+      language: "fr-FR",
       page: "1",
     },
     headers: headers,
@@ -74,7 +74,7 @@ export const searchMovies = async (query) => {
 // Fonction pour obtenir les films à venir
 export const getUpcomingMovies = async () => {
   const response = await axios.get(`${baseUrl}/movie/upcoming`, {
-    params: { language: "en-US", page: "1" },
+    params: { language: "fr-FR", page: "1" },
     headers: headers,
   });
   return response.data;
@@ -83,7 +83,7 @@ export const getUpcomingMovies = async () => {
 // Fonction pour obtenir les films actuellement à l'affiche
 export const getNowPlayingMovies = async () => {
   const response = await axios.get(`${baseUrl}/movie/now_playing`, {
-    params: { language: "en-US", page: "1" },
+    params: { language: "fr-FR", page: "1" },
     headers: headers,
   });
   return response.data;
@@ -92,7 +92,7 @@ export const getNowPlayingMovies = async () => {
 // Fonction pour obtenir les crédits (acteurs) d'un film
 export const getMovieCredits = async (movieId) => {
   const response = await axios.get(`${baseUrl}/movie/${movieId}/credits`, {
-    params: { language: "en-US" },
+    params: { language: "fr-FR" },
     headers: headers,
   });
   return response.data;

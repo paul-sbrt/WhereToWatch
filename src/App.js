@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MovieCard from "./components/MovieCard";
 import Genres from "./components/Genres";
 import MovieDetails from "./components/MovieDetails"; // Import de la page de détails du film
 import Footer from "./components/Footer";
+import MovieList from "./components/MovieList";
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -57,7 +57,7 @@ const App = () => {
                 onShowNowPlaying={handleShowNowPlaying}
                 onShowUpcoming={handleShowUpcoming}
               />
-              <MovieCard
+              <MovieList
                 searchQuery={searchQuery}
                 isSearching={isSearching}
                 selectedGenre={selectedGenre}
