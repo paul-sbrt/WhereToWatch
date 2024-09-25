@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/.github.io/WhereToWatch/static/css/main.b5dcff07.css",
+    "main.js": "/.github.io/WhereToWatch/static/js/main.bf4e8e43.js",
+    "static/js/453.943089e2.chunk.js": "/.github.io/WhereToWatch/static/js/453.943089e2.chunk.js",
+    "static/media/logo.webp": "/.github.io/WhereToWatch/static/media/logo.2a4cb21d410f3f28fab5.webp",
+    "index.html": "/.github.io/WhereToWatch/index.html",
+    "main.b5dcff07.css.map": "/.github.io/WhereToWatch/static/css/main.b5dcff07.css.map",
+    "main.bf4e8e43.js.map": "/.github.io/WhereToWatch/static/js/main.bf4e8e43.js.map",
+    "453.943089e2.chunk.js.map": "/.github.io/WhereToWatch/static/js/453.943089e2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5dcff07.css",
+    "static/js/main.bf4e8e43.js"
+  ]
+}
