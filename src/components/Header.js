@@ -12,11 +12,16 @@ const Header = ({ onSearch }) => {
     onSearch(query);
   };
 
+  const handleLogoClick = () => {
+    // Force a page reload
+    window.location.reload();
+  };
+
   return (
     <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="mb-4">
       <Container className="position-relative d-flex justify-content-between align-items-center">
         {/* Logo on the left */}
-        <Navbar.Brand href="/">
+        <Navbar.Brand onClick={handleLogoClick}>
           <img
             src={logo}
             width="60"
